@@ -1,14 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic,700italic,300,300italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic,700italic,300,300italic&subset=latin,latin-ext);
 
 @media (max-width: 776px) {
   .text-right {
     text-align: left;
   }
-}
-
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -17,32 +12,25 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville' , serif, Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" ;
-  margin-bottom: 120px;
-}
-
-.win p, .win h1, .win h2, .win h3, .win h4, .win.panel-body {
-  transform: rotate(.03deg);
-  -webkit-transform: rotate(.03deg);
-  font-weight: 700;
-}
-
-.navbar-brand {
-	font-family: '游明朝', 'Yu Mincho' , '游明朝体' , 'YuMi    ncho' , 'ヒラギノ明朝 Pro W3' , 'Hiragino Mincho Pro' , 'HiraMinProN-W3', 'HGS明朝E' , 'ＭＳ Ｐ明
-    朝' , 'MS PMincho', serif;
+  font-family: 'Libre Baskerville', Garamond, serif;
 }
 
 .summary {
   display: inline;
 }
 
+/* Custom page footer */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 60px;
   background-color: #f5f5f5;
-  text-align: center;
 }
 
 .footer-text {
@@ -67,7 +55,7 @@ body {
 }
 
 /* code style */
-.hightlight { background-color: #ffffcc }
+.highlight { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */
 .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .k { color: #000000; font-weight: bold } /* Keyword */
@@ -128,80 +116,3 @@ body {
 .vg { color: #008080 } /* Name.Variable.Global */
 .vi { color: #008080 } /* Name.Variable.Instance */
 .il { color: #009999 } /* Literal.Number.Integer.Long */
-
-.MathJax .mi, .MathJax .mo {
-    color: inherit !important;
-}
-
-a.disabled {
-    pointer-events: none;
-    color: #000;
-}
-
-.panel-body {
-    overflow: scroll;
-}
-
-.git-snippet-attribution {
-	border-top: 1px #c5c5c5 solid !important;
-}
-
-.git-snippet-attribution span {
-	color: black !important;
-	text-decoration: none !important;
-	font-weight: normal !important;
-	font-style: normal !important;
-}
-
-.prettyprint {
-	border: 1px #c5c5c5 solid !important;
-}
-
-.active a {
-    padding-bottom: 21px !important;
-}
-
-/* using panel-heading for math ... */
-.def a:after {
-    content: "Def.";
-    margin-top: -2px;
-    text-align: right;
-    float: right;
-    padding: 2px 5px 2px 5px;
-    border-radius: 0.5em;
-    background-color: #333;
-    color: #fff;
-}
-
-.theo a:after {
-    content: "Th.";
-    margin-top: -2px;
-    text-align: right;
-    float: right;
-    padding: 2px 5px 2px 5px;
-    border-radius: 0.5em;
-    background-color: #333;
-    color: #fff;
-}
-
-.prop a:after {
-    content: "Prop.";
-    margin-top: -2px;
-    text-align: right;
-    float: right;
-    padding: 2px 5px 2px 5px;
-    border-radius: 0.5em;
-    background-color: #333;
-    color: #fff;
-}
-
-.lemma a:after {
-    content: "Lemma";
-    margin-top: -2px;
-    text-align: right;
-    float: right;
-    padding: 2px 5px 2px 5px;
-    border-radius: 0.5em;
-    background-color: #333;
-    color: #fff;
-}
