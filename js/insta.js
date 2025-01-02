@@ -4,7 +4,7 @@
         document.querySelector('#insta').insertAdjacentHTML('beforeend','<ul></ul>');  
         
         let cards =  12; // insta投稿の表示件数を指定
-        const response = await fetch(`https://graph.facebook.com/v9.0/【ビジネスアカウントID】?fields=name,media.limit(${cards}){ caption,media_url,thumbnail_url,permalink,like_count,comments_count,media_type}&access_token=【アクセストークン】`);
+        const response = await fetch(`https://graph.facebook.com/v9.0/17841471232715282?fields=name,media.limit(${cards}){ caption,media_url,thumbnail_url,permalink,like_count,comments_count,media_type}&access_token=EAAISQvJsZB9QBO2rtDHVw2ttWV73cpImI5qmomOJK8tYdsZCAWWYKjXAjHQteigZBQgRc8FMf8OhG9Ubqdk4OzlfHxCRnLBtHtDYCWok0nBx6kBn7j0Co54c1bMdHd69erMEPZAqVESyaW5QmKzdKI7bAqZBprm5qw0ZAZAOeXKpi3ACJUXwKZB4RViT3e4fZAGRe`);
         
         if(response.status === 200){
             const resObjects = await response.json();
