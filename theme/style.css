@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic,700italic,300,300italic&subset=latin,latin-ext);
+
+@media (max-width: 776px) {
+  .text-right {
+    text-align: left;
+  }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Libre Baskerville' , serif, Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" ;
+  margin-bottom: 120px;
+}
+
+.win p, .win h1, .win h2, .win h3, .win h4, .win.panel-body {
+  transform: rotate(.03deg);
+  -webkit-transform: rotate(.03deg);
+  font-weight: 700;
+}
+
+.navbar-brand {
+	font-family: '游明朝', 'Yu Mincho' , '游明朝体' , 'YuMi    ncho' , 'ヒラギノ明朝 Pro W3' , 'Hiragino Mincho Pro' , 'HiraMinProN-W3', 'HGS明朝E' , 'ＭＳ Ｐ明
+    朝' , 'MS PMincho', serif;
+}
+
+.summary {
+  display: inline;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 20px 0;  
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.entry-content {
+  padding:15px 0;
+  line-height:1.8;
+}
+
+.comment {
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+/* code style */
+.hightlight { background-color: #ffffcc }
+.c { color: #999988; font-style: italic } /* Comment */
+.err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.k { color: #000000; font-weight: bold } /* Keyword */
+.o { color: #000000; font-weight: bold } /* Operator */
+.cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.c1 { color: #999988; font-style: italic } /* Comment.Single */
+.cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { color: #000000; font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #999999 } /* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #aaaaaa } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.m { color: #009999 } /* Literal.Number */
+.s { color: #d01040 } /* Literal.String */
+.na { color: #008080 } /* Name.Attribute */
+.nb { color: #0086B3 } /* Name.Builtin */
+.nc { color: #445588; font-weight: bold } /* Name.Class */
+.no { color: #008080 } /* Name.Constant */
+.nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.ni { color: #800080 } /* Name.Entity */
+.ne { color: #990000; font-weight: bold } /* Name.Exception */
+.nf { color: #990000; font-weight: bold } /* Name.Function */
+.nl { color: #990000; font-weight: bold } /* Name.Label */
+.nn { color: #555555 } /* Name.Namespace */
+.nt { color: #000080 } /* Name.Tag */
+.nv { color: #008080 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #009999 } /* Literal.Number.Float */
+.mh { color: #009999 } /* Literal.Number.Hex */
+.mi { color: #009999 } /* Literal.Number.Integer */
+.mo { color: #009999 } /* Literal.Number.Oct */
+.sb { color: #d01040 } /* Literal.String.Backtick */
+.sc { color: #d01040 } /* Literal.String.Char */
+.sd { color: #d01040 } /* Literal.String.Doc */
+.s2 { color: #d01040 } /* Literal.String.Double */
+.se { color: #d01040 } /* Literal.String.Escape */
+.sh { color: #d01040 } /* Literal.String.Heredoc */
+.si { color: #d01040 } /* Literal.String.Interpol */
+.sx { color: #d01040 } /* Literal.String.Other */
+.sr { color: #009926 } /* Literal.String.Regex */
+.s1 { color: #d01040 } /* Literal.String.Single */
+.ss { color: #990073 } /* Literal.String.Symbol */
+.bp { color: #999999 } /* Name.Builtin.Pseudo */
+.vc { color: #008080 } /* Name.Variable.Class */
+.vg { color: #008080 } /* Name.Variable.Global */
+.vi { color: #008080 } /* Name.Variable.Instance */
+.il { color: #009999 } /* Literal.Number.Integer.Long */
+
+.MathJax .mi, .MathJax .mo {
+    color: inherit !important;
+}
+
+a.disabled {
+    pointer-events: none;
+    color: #000;
+}
+
+.panel-body {
+    overflow: scroll;
+}
+
+.git-snippet-attribution {
+	border-top: 1px #c5c5c5 solid !important;
+}
+
+.git-snippet-attribution span {
+	color: black !important;
+	text-decoration: none !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+
+.prettyprint {
+	border: 1px #c5c5c5 solid !important;
+}
+
+.active a {
+    padding-bottom: 21px !important;
+}
+
+/* using panel-heading for math ... */
+.def a:after {
+    content: "Def.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.theo a:after {
+    content: "Th.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.prop a:after {
+    content: "Prop.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.lemma a:after {
+    content: "Lemma";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
