@@ -9,18 +9,13 @@
 <title>あくりば</title>
 <link rel="stylesheet" type="text/css" href=".css">
 <link rel="shortcut icon" href=" favicon.ico">
-</head>
-
-<body>
 
 
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&src=YWNyb3NzLmEucml2ZXJAZ21haWwuY29t&color=%234285F4" style="border:solid 1px #777" width="50%" height="50%" frameborder="0" scrolling="no"></iframe>
 
 (function ($) {
     $.ajax({  // jQueryのajaxでjsonデータを取得しますね
         type: 'GET',
-        url: 'https://graph.facebook.com/v13.0/「InstagramビジネスID」?access_token=「アクセスTOKEN」&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+        url: 'https://graph.facebook.com/v13.0/17841471232715282?access_token=EAAISQvJsZB9QBO8vdvz7WZAnlCS27xCA64RBwUHUck06mismfdQEvbZB7wksJKsKJs9WkGzoQaYwZCj4ia4kZBD3ZAnZBvTTvGcfe7Y81N1pm0Jqe3wkwsiPxMZCrgJswFuEjm4MBgZBUHPjirkKTUmDzE8qjHP2Ko8FaecJ2QUo4WBVzMxCA1A4SIgOXdmC88HPU&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
         dataType: 'json',　
         success: function (json) {
             var insta = json.media.data;
@@ -44,6 +39,16 @@
         }
     });
 })(jQuery);
+
+
+
+</head>
+
+<body>
+
+
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&src=YWNyb3NzLmEucml2ZXJAZ21haWwuY29t&color=%234285F4" style="border:solid 1px #777" width="50%" height="50%" frameborder="0" scrolling="no"></iframe>
 
 <ul class="insta_list"></ul>
 
