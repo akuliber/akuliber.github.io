@@ -116,23 +116,3 @@ body {
 .vg { color: #008080 } /* Name.Variable.Global */
 .vi { color: #008080 } /* Name.Variable.Instance */
 .il { color: #009999 } /* Literal.Number.Integer.Long */
-
-ul.insta_list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-ul.insta_list li {
-  list-style: none;
-  width: 48%;
-  margin-bottom: 1vw;
-}
-ul.insta_list li a p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-ul.insta_list li a p span {
-  font-size: 120%;
-}
