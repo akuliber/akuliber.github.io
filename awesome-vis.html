@@ -1,33 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict //EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
-<meta name="keywords" content="自由学習,芸術,英語,音楽,塾">
-<meta name="description" content="芸術と英語と音楽を通して自由に学ぶ場です">
-<title>あくりば</title>
-<link rel="stylesheet" type="text/css" href=".css">
-<link rel="shortcut icon" href=" favicon.ico">
-</head>
-
-<body>
-
-
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&src=YWNyb3NzLmEucml2ZXJAZ21haWwuY29t&color=%234285F4" style="border:solid 1px #777" width="50%" height="50%" frameborder="0" scrolling="no"></iframe>
-
-
-
-
-<!--
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-    <title>あくりば - UserName</title>
+    <title>Pelican blog post with dynamic javascript components - あくりば</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -41,8 +18,10 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="あくりば Full Atom Feed" />
+    <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="あくりば Categories Atom Feed" />
     
     <!-- 自分で入れたもの -->
+<link rel="stylesheet" href="/css/my_styles.css" type="text/css" />
     <!-- ここまで　-->
   </head>
   <body id="index" class="archive">
@@ -62,51 +41,36 @@
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/tags.html">tags</a></li>
+            <li><a href="/tags.html">tags</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
     </nav>
     <div class="container">
-    <section id="content" class="content">
-      <ol class="breadcrumb">
-        <li><a href=""><div class="fa fa-lg fa-home"></div><span class="hidden-xs"> Home</span></a></li>
-        <li><a href="/authors.html"><div class="fa fa-lg fa-pencil"></div><div class="fa fa-pencil"></div> Authors <span class="badge">2</span></a></li>
-        <li class="active"><div class="fa fa-lg fa-pencil"></div> UserName <span class="badge">2</span></li>
-      </ol>
-      <div class="row">
-        <div class="col-sm-3">
-          <span class="text-muted">日 24 2月 2019</span>
-        </div>
-        <div class="col-sm-9">
-          <p>
-            <a href="/FirstPost.html" rel="bookmark" title="Permalink to 最初の投稿">最初の投稿</a>
-            <br/>
-            簡単にブログ作成
-          </p>
-        </div>
+    <section id="content" class="article content">
+      <header>
+        <h2 class="entry-title">
+          Pelican blog post with dynamic javascript components
+        </h2>
+        
+        <div class="text-muted">土 20 6月 2015</div>
+      </header>
+<!-- .entry-content -->
+      <div class="entry-content">
+        
       </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <span class="text-muted">日 24 2月 2019</span>
-        </div>
-        <div class="col-sm-9">
-          <p>
-            <a href="/next.html" rel="bookmark" title="Permalink to 2番目の投稿です">2番目の投稿です</a>
-            <br/>
-            簡単にブログ作成
-          </p>
-        </div>
-      </div>
-      <div>
-        <ul class="pager">
-          <!--- <li class="previous disabled"><a>&larr; Previous</a></li> -->
-          <!--- <li class="next disabled"><a>Next &rarr;</a></li> -->
-        </ul>
-      </div>
+<!-- /.entry-content -->
+      <footer class="post-info text-muted">
+        <button type="button" class="btn btn-default">          
+          <a href="/category/blog.html"><div class="fa fa-lg fa-folder-open"></div> Blog</a>
+        </button>
+        <button type="button" class="btn btn-default">
+          <a href="/tag/interactive-visualization.html"><div class="fa fa-lg fa-tag"></div> interactive visualization</a>
+        </button>
+      </footer>
+      <!-- /.post-info -->
     </section>
-    <!-- content -->
     </div>
     <footer class="footer">
       <div class="container">
@@ -117,6 +81,8 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!--- 自分　-->
+<script src="/js/my_vis_1.js"></script>
+<script src="/js/my_vis_2.js"></script>
 
     <!-- ここまで -->
   </body>
