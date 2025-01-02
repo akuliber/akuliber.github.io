@@ -17,12 +17,35 @@
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&src=YWNyb3NzLmEucml2ZXJAZ21haWwuY29t&color=%234285F4" style="border:solid 1px #777" width="50%" height="50%" frameborder="0" scrolling="no"></iframe>
 
-<div id="instaWrapper">
-    <div id="insta">
-        <ul></ul>
-    </div>
-</div>
+(function ($) {
+    $.ajax({  // jQueryのajaxでjsonデータを取得しますね
+        type: 'GET',
+        url: 'https://graph.facebook.com/v13.0/「InstagramビジネスID」?access_token=「アクセスTOKEN」&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+        dataType: 'json',　
+        success: function (json) {
+            var insta = json.media.data;
+            for (var i = 0; i < 6; i++) {
+              let url = insta[i].media_url; // 動画ソースのURLを取得
+              let href = insta[i].permalink; // リンク先URLを取得
+              let caption = insta[i].caption; //　投稿のキャプションを取得
+              let like = insta[i].like_count; //　いいね！数の取得
+              if(url.indexOf('.mp4') <= 0){ // 今回は動画は除外させました .mp4以外を<li>タグで描画します
+                $('.insta_list').append(` // テンプレートリテラルはバッククォート
+<li>
+  <a href="${href}" target="qoo_insta">
+    <img src="${url}" alt="${caption}">
+    <p>${caption}</p>
+    <p><span>${like}</span> Likes!!</p>
+  </a>
+</li>
+              `);
+}
+            }
+        }
+    });
+})(jQuery);
 
+<ul class="insta_list"></ul>
 
 <!--
 <!DOCTYPE html>
